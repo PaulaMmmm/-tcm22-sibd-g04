@@ -27,12 +27,36 @@ VISITA (hora, data)
 
 ASSOCIAÇÕES:
 
+cotem (SETOR, MORADIA)
 
+podeFazer (CLIENTE, APADRINHAMENTO)
 
+compra (CLIENTE, BILHETE)
+
+daAcesso (BILHETE, SETOR)
+
+podeConter (BILHETE, EVENTO)
+
+podeSerVisita (BILHETE, VISITA)
+
+podeSerVisitaGrupo (BILHETE, VISITAGRUPO)
+
+financia (APADRINHAMENTO, ANIMAL)
+
+habita (ANIMAL, MORADIA)
+
+cuida (FUNCIONARIO, ANIMAL)
+
+supervisiona (FUNCIONARIO, FUNCIONARIO)
+
+controla (FUNCIONARIO, NECESSIDADE)
+
+tem (ANIMAL, NECESSIDADE)
 
 
 Exemplo de inserção de uma imagem:   
-![An alternative description](images/image02.png)   
+![An alternative description](images/image02.png)  
+
 
 CLIENTE: O Zoo armazena os seguintes atributos dos clientes: nome, idade, email, CC. 
 
