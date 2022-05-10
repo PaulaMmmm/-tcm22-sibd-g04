@@ -55,7 +55,7 @@ tem (ANIMAL, NECESSIDADE)
 
 
 Exemplo de inserção de uma imagem:   
-![An alternative description](images/image02.png)  
+![An alternative description](images/imagem_01.png)  
 
 
 CLIENTE: O Zoo armazena os seguintes atributos dos clientes: nome, idade, email, CC. 
