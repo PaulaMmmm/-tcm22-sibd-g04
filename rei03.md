@@ -1,7 +1,7 @@
 # C3 : Esquema conceptual
 
 ## Modelo E/A
-ENTIDADES:
+### ENTIDADES:
 
 ANIMAL (ID, peso, idade, nomeCientifico, nomePopular, dataObito, vacinacoes, dataNasc, especie)
 
@@ -25,7 +25,7 @@ CLIENTE (nome, idade, email, CC)
 
 VISITA (hora, data)
 
-ASSOCIAÇÕES:
+### ASSOCIAÇÕES:
 
 cotem (SETOR, MORADIA)
 
