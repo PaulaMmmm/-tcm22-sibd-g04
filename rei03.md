@@ -108,6 +108,11 @@ VISITASGRUPO: As visitas de grupo tem os atributos  nome de grupo (da empresa, e
 
 
 ## Regras de negócio adicionais (Restrições)
+Apenas o gerente pode acrescentar animais (oriundos de outros zoos).
+
+Nem todas as espécies de animais podem coabitar num mesmo setor.
+
+Os voluntários é o único tipo de funcionário que não tem qualquer acesso à base de dados.
 
 
 ---
