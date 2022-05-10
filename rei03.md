@@ -54,7 +54,7 @@ controla (FUNCIONARIO, NECESSIDADE)
 tem (ANIMAL, NECESSIDADE)
 
 
-Exemplo de inserção de uma imagem:   
+### Diagrama: 
 ![An alternative description](diagramaZoo.jpeg)  
 
 
