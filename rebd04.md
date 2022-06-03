@@ -15,14 +15,14 @@ Descrição da Tabela A
 
 #### COLUNAS 
 
-| ANIMAL   | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| codigo   | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
-| peso     | Peso do animal            | DATE        | now()       | Não        | Não  |
-| idade    | Idade do animal           | VARCHAR(50) | -           | Não        | Não  |
-| nome     | Nome centifico            | TEXT        | -           | Não        | Sim  |
-| data     | Data de nascimento        | BIGINT      | -           | Não        | Sim  |
-| data     | Data de obito             | BIGINT      | -           | Não        | Sim  |
+| ANIMAL     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| codAnimal  | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
+| peso       | Peso do animal            | DATE        | now()       | Não        | Não  |
+| idade      | Idade do animal           | VARCHAR(50) | -           | Não        | Não  |
+| nome       | Nome centifico            | TEXT        | -           | Não        | Sim  |
+| data       | Data de nascimento        | BIGINT      | -           | Não        | Sim  |
+| data       | Data de obito             | BIGINT      | -           | Não        | Sim  |
 
 
 
@@ -32,7 +32,7 @@ Descrição da Tabela A
 
 | Coluna(s) |
 | --------- |
-| id        |
+| CodAnimal |
 
 - **Unicidade** (valores únicos)*:
 
@@ -68,13 +68,12 @@ Descrição da Tabela B
 
 #### COLUNAS 
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| SETOR    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| id       | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
-| data     | Data do registo           | DATE        | now()       | Não        | Não  |
-| nome     | Nome do registo           | VARCHAR(50) | -           | Não        | Não  |
-| conteudo | Conteudo do documento     | TEXT        | -           | Não        | Sim  |
-| tipo     | tipo de testes            | BIGINT      | -           | Não        | Sim  |
+| idSetor  | identificador da tabela B | BIGINT      | -           | Sim        | Não  |
+| local    | Local do setor            | DATE        | now()       | Não        | Não  |
+| tema     | Tema de cada setor        | VARCHAR(50) | -           | Não        | Não  |
+
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
