@@ -111,7 +111,7 @@ Descrição da Tabela B
 
 #### DIETA  
 
-Descrição da Tabela B
+Descrição da Tabela C
 
 #### COLUNAS 
 
@@ -123,7 +123,7 @@ Descrição da Tabela B
 
 #### ESPECIE   
 
-Descrição da Tabela
+Descrição da Tabela D
 
 #### COLUNAS 
 
@@ -137,7 +137,7 @@ Descrição da Tabela
 
 #### VACINA    
 
-Descrição da Tabela
+Descrição da Tabela E
 
 #### COLUNAS 
 
@@ -150,7 +150,7 @@ Descrição da Tabela
 
 #### AREA    
 
-Descrição da Tabela
+Descrição da Tabela F
 
 #### COLUNAS 
 
@@ -164,7 +164,7 @@ Descrição da Tabela
 
 #### TIPO     
 
-Descrição da Tabela
+Descrição da Tabela G
 
 #### COLUNAS 
 
@@ -176,7 +176,7 @@ Descrição da Tabela
 
 #### FUNCIONARIO     
 
-Descrição da Tabela
+Descrição da Tabela H
 
 #### COLUNAS 
 
@@ -191,7 +191,7 @@ Descrição da Tabela
 
 #### HORARIO     
 
-Descrição da Tabela
+Descrição da Tabela I
 
 #### COLUNAS 
 
@@ -205,7 +205,7 @@ Descrição da Tabela
 
 #### BILHETE      
 
-Descrição da Tabela
+Descrição da Tabela J
 
 #### COLUNAS 
 
@@ -214,6 +214,76 @@ Descrição da Tabela
 | codBilhete | identificador da tabela J | BIGINT      | -           | Sim        | Não  |
 | preço      | Preço dos bilhetes        | BIGINT      | -           | Sim        | Não  |
 | faixaEtaria|                           | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_k
+
+#### DESCONTO       
+
+Descrição da Tabela K
+
+#### COLUNAS 
+
+| DESCONTO | Descrição        | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :--------------- | :---------- | :---------- | :--------- | :--- |
+| nome     | Nome do desconto | BIGINT      | -           | Sim        | Não  |
+| valor    | Valor do desconto| BIGINT      | -           | Sim        | Não  |
+
+### Tabela_l
+
+#### VISITASGRUPO    
+
+Descrição da Tabela L
+
+#### COLUNAS 
+
+| VISITASGRUPO | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------     | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| idVG         | identificador da tabela L | BIGINT      | -           | Sim        | Não  |
+| nome         | nome do grupo             | BIGINT      | -           | Sim        | Não  |
+| numero       | numero de participantes   | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_m
+
+#### HORARIOVISITASGRUPO     
+
+Descrição da Tabela M
+
+#### COLUNAS 
+
+| HORARIOVISITASGRUPO  | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------             | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| data                 | identificador da tabela M | BIGINT      | -           | Sim        | Não  |
+| hora                 | Hora de entrada           | BIGINT      | -           | Sim        | Não  |
+| hora                 | Hora de saida             | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_n
+
+#### CLIENTE 
+
+Descrição da Tabela N
+
+#### COLUNAS 
+
+| CLIENTE   | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------  | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| idCliente | identificador da tabela N | BIGINT      | -           | Sim        | Não  |
+| nome      | Nome do cliente           | DATE        | now()       | Não        | Não  |
+| idade     | Idade do cliente          | VARCHAR(50) | -           | Não        | Não  |
+| email     | Email do cliente          | TEXT        | -           | Não        | Sim  |
+| CC        | CC do cliente             | BIGINT      | -           | Não        | Sim  |
+| contacto  | Contacto do cliente       | BIGINT      | -           | Não        | Sim  |
+
+### Tabela_o
+
+#### FUNCAO  
+
+Descrição da Tabela O
+
+#### COLUNAS 
+
+| FUNCAO | Descrição      | Domínio     | por Omissão | Automático | Nulo |
+| :----  | :------------- | :---------- | :---------- | :--------- | :--- |
+| nome   | nome da função | BIGINT      | -           | Sim        | Não  |
 
 
 ## Vistas
