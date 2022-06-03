@@ -133,6 +133,14 @@ Descrição da Tabela D
 | nome            | nome da especie           | BIGINT      | -           | Sim        | Não  |
 | quantidadeComida| nome da especie           | BIGINT      | -           | Sim        | Não  |
 
+#### RESTRIÇÕES DE INTEGRIDADE 
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| idEspecie |
+
 ### Tabela_e
 
 #### VACINA    
@@ -145,6 +153,14 @@ Descrição da Tabela E
 | :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | idVacina        | identificador da tabela E | BIGINT      | -           | Sim        | Não  |
 | nome            | nome da vacina            | BIGINT      | -           | Sim        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE 
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| idVacina  |
 
 ### Tabela_f
 
@@ -159,6 +175,14 @@ Descrição da Tabela F
 | idArea          | identificador da tabela F | BIGINT      | -           | Sim        | Não  |
 | capacidadeMax   | Capacidade maxima da area | BIGINT      | -           | Sim        | Não  |
 | quantidadeComida|                           | BIGINT      | -           | Sim        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE 
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| idArea    |
 
 ### Tabela_g
 
@@ -187,6 +211,14 @@ Descrição da Tabela H
 | CC            | CC do funcionario         | BIGINT      | -           | Sim        | Não  |
 | contacto      | Contacto do funcionario   | BIGINT      | -           | Sim        | Não  |
 
+#### RESTRIÇÕES DE INTEGRIDADE 
+
+- **Chave Primária**: 
+
+| Coluna(s)      |
+| ---------      |
+| CodFuncionario |
+
 ### Tabela_i
 
 #### HORARIO     
@@ -201,6 +233,14 @@ Descrição da Tabela I
 | horaEntrada| Hora de entrada no        | BIGINT      | -           | Sim        | Não  |
 | horaSaida  | CC do funcionario         | BIGINT      | -           | Sim        | Não  |
 
+#### RESTRIÇÕES DE INTEGRIDADE 
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| data      |
+
 ### Tabela_j
 
 #### BILHETE      
@@ -214,6 +254,14 @@ Descrição da Tabela J
 | codBilhete | identificador da tabela J | BIGINT      | -           | Sim        | Não  |
 | preço      | Preço dos bilhetes        | BIGINT      | -           | Sim        | Não  |
 | faixaEtaria|                           | BIGINT      | -           | Sim        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE 
+
+- **Chave Primária**: 
+
+| Coluna(s)  |
+| ---------  |
+| codBilhete |
 
 ### Tabela_k
 
@@ -241,6 +289,14 @@ Descrição da Tabela L
 | idVG         | identificador da tabela L | BIGINT      | -           | Sim        | Não  |
 | nome         | nome do grupo             | BIGINT      | -           | Sim        | Não  |
 | numero       | numero de participantes   | BIGINT      | -           | Sim        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE 
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| idVG      |
 
 ### Tabela_m
 
@@ -272,6 +328,14 @@ Descrição da Tabela N
 | email     | Email do cliente          | TEXT        | -           | Não        | Sim  |
 | CC        | CC do cliente             | BIGINT      | -           | Não        | Sim  |
 | contacto  | Contacto do cliente       | BIGINT      | -           | Não        | Sim  |
+
+#### RESTRIÇÕES DE INTEGRIDADE 
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| idCliente |
 
 ### Tabela_o
 
