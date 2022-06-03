@@ -149,10 +149,10 @@ Descrição da Tabela E
 
 #### COLUNAS 
 
-| VACINA          | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idVacina        | identificador da tabela E | BIGINT      | -           | Sim        | Não  |
-| nome            | nome da vacina            | BIGINT      | -           | Sim        | Não  |
+| VACINA   | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| idVacina | identificador da tabela E | BIGINT      | -           | Sim        | Não  |
+| nome     | nome da vacina            | BIGINT      | -           | Sim        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
@@ -192,9 +192,9 @@ Descrição da Tabela G
 
 #### COLUNAS 
 
-| TIPO            | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| nome            | Nome do tipo de especie   | BIGINT      | -           | Sim        | Não  |
+| TIPO  | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :---- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nome  | Nome do tipo de especie   | BIGINT      | -           | Sim        | Não  |
 
 ### Tabela_h
 
@@ -298,31 +298,18 @@ Descrição da Tabela L
 | --------- |
 | idVG      |
 
+
 ### Tabela_m
 
-#### HORARIOVISITASGRUPO     
+#### CLIENTE 
 
 Descrição da Tabela M
 
 #### COLUNAS 
 
-| HORARIOVISITASGRUPO  | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :-------             | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| data                 | identificador da tabela M | BIGINT      | -           | Sim        | Não  |
-| hora                 | Hora de entrada           | BIGINT      | -           | Sim        | Não  |
-| hora                 | Hora de saida             | BIGINT      | -           | Sim        | Não  |
-
-### Tabela_n
-
-#### CLIENTE 
-
-Descrição da Tabela N
-
-#### COLUNAS 
-
 | CLIENTE   | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------  | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idCliente | identificador da tabela N | BIGINT      | -           | Sim        | Não  |
+| idCliente | identificador da tabela M | BIGINT      | -           | Sim        | Não  |
 | nome      | Nome do cliente           | DATE        | now()       | Não        | Não  |
 | idade     | Idade do cliente          | VARCHAR(50) | -           | Não        | Não  |
 | email     | Email do cliente          | TEXT        | -           | Não        | Sim  |
@@ -337,11 +324,11 @@ Descrição da Tabela N
 | --------- |
 | idCliente |
 
-### Tabela_o
+### Tabela_n
 
 #### FUNCAO  
 
-Descrição da Tabela O
+Descrição da Tabela N
 
 #### COLUNAS 
 
