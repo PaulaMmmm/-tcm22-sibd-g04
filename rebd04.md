@@ -9,7 +9,7 @@
 
 ### Tabela_a
 
-#### DESCRIÇÃO 
+#### ANIMAL
 
 Descrição da Tabela A
 
@@ -62,7 +62,7 @@ Descrição da Tabela A
 
 ### Tabela_b
 
-#### DESCRIÇÃO 
+#### SETOR 
 
 Descrição da Tabela B
 
@@ -107,6 +107,85 @@ Descrição da Tabela B
 | ---- | --------- |
 |      |           |
 
+### Tabela_c
+
+#### DIETA  
+
+Descrição da Tabela B
+
+#### COLUNAS 
+
+| DIETA    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nomeDieta| identificador da tabela C | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_D
+
+#### ESPECIE   
+
+Descrição da Tabela
+
+#### COLUNAS 
+
+| ESPECIE         | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| idEspecie       | identificador da tabela D | BIGINT      | -           | Sim        | Não  |
+| nome            | nome da especie           | BIGINT      | -           | Sim        | Não  |
+| quantidadeComida| nome da especie           | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_E
+
+#### VACINA    
+
+Descrição da Tabela
+
+#### COLUNAS 
+
+| VACINA          | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| idVacina        | identificador da tabela E | BIGINT      | -           | Sim        | Não  |
+| nome            | nome da vacina            | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_F
+
+#### AREA    
+
+Descrição da Tabela
+
+#### COLUNAS 
+
+| AREA            | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| idArea          | identificador da tabela F | BIGINT      | -           | Sim        | Não  |
+| capacidadeMax   | Capacidade maxima da area | BIGINT      | -           | Sim        | Não  |
+| quantidadeComida|                           | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_G
+
+#### TIPO     
+
+Descrição da Tabela
+
+#### COLUNAS 
+
+| TIPO            | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nome            | Nome do tipo de especie   | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_F
+
+#### FUNCIONARIO     
+
+Descrição da Tabela
+
+#### COLUNAS 
+
+| FUNCIONARI    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------      | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| CodFuncionario| identificador da tabela F | BIGINT      | -           | Sim        | Não  |
+| nome          | Nome do funcionario       | BIGINT      | -           | Sim        | Não  |
+| CC            | CC do funcionario         | BIGINT      | -           | Sim        | Não  |
+| contacto      | Contacto do funcionario   | BIGINT      | -           | Sim        | Não  |
 
 
 ## Vistas
