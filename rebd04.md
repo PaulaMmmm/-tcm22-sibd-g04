@@ -119,7 +119,7 @@ Descrição da Tabela B
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | nomeDieta| identificador da tabela C | BIGINT      | -           | Sim        | Não  |
 
-### Tabela_D
+### Tabela_d
 
 #### ESPECIE   
 
@@ -133,7 +133,7 @@ Descrição da Tabela
 | nome            | nome da especie           | BIGINT      | -           | Sim        | Não  |
 | quantidadeComida| nome da especie           | BIGINT      | -           | Sim        | Não  |
 
-### Tabela_E
+### Tabela_e
 
 #### VACINA    
 
@@ -146,7 +146,7 @@ Descrição da Tabela
 | idVacina        | identificador da tabela E | BIGINT      | -           | Sim        | Não  |
 | nome            | nome da vacina            | BIGINT      | -           | Sim        | Não  |
 
-### Tabela_F
+### Tabela_f
 
 #### AREA    
 
@@ -160,7 +160,7 @@ Descrição da Tabela
 | capacidadeMax   | Capacidade maxima da area | BIGINT      | -           | Sim        | Não  |
 | quantidadeComida|                           | BIGINT      | -           | Sim        | Não  |
 
-### Tabela_G
+### Tabela_g
 
 #### TIPO     
 
@@ -172,7 +172,7 @@ Descrição da Tabela
 | :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | nome            | Nome do tipo de especie   | BIGINT      | -           | Sim        | Não  |
 
-### Tabela_F
+### Tabela_h
 
 #### FUNCIONARIO     
 
@@ -180,12 +180,40 @@ Descrição da Tabela
 
 #### COLUNAS 
 
-| FUNCIONARI    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| FUNCIONARIO   | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------      | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| CodFuncionario| identificador da tabela F | BIGINT      | -           | Sim        | Não  |
+| CodFuncionario| identificador da tabela H | BIGINT      | -           | Sim        | Não  |
 | nome          | Nome do funcionario       | BIGINT      | -           | Sim        | Não  |
 | CC            | CC do funcionario         | BIGINT      | -           | Sim        | Não  |
 | contacto      | Contacto do funcionario   | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_i
+
+#### HORARIO     
+
+Descrição da Tabela
+
+#### COLUNAS 
+
+| HORARIO    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| data       | Data do evento            | BIGINT      | -           | Sim        | Não  |
+| horaEntrada| Hora de entrada no        | BIGINT      | -           | Sim        | Não  |
+| horaSaida  | CC do funcionario         | BIGINT      | -           | Sim        | Não  |
+
+### Tabela_j
+
+#### BILHETE      
+
+Descrição da Tabela
+
+#### COLUNAS 
+
+| BILHETE    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| codBilhete | identificador da tabela J | BIGINT      | -           | Sim        | Não  |
+| preço      | Preço dos bilhetes        | BIGINT      | -           | Sim        | Não  |
+| faixaEtaria|                           | BIGINT      | -           | Sim        | Não  |
 
 
 ## Vistas
