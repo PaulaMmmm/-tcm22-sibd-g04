@@ -83,29 +83,6 @@ Descrição da Tabela B
 | --------- |
 | idSetor   |
 
-- **Unicidade** (valores únicos)*:
-
-| Nome        | Coluna(s) | Indexar |
-| ----------- | --------- | ------- |
-| nome_unique | nome      | Sim     |
-
-- **Referêncial** (chaves estrangeiras)*:
-
-| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
-| ----- | --------- | ------------------- | ------------------------- | ------- |
-| ta_fk | tipo      | Tabela_c            | id                        | Não     |
-
-- **Atributos** (check)*:
-
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
-
-- **Outros Indices***:
-
-| Nome | Coluna(s) |
-| ---- | --------- |
-|      |           |
 
 ### Tabela_c
 
