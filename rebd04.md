@@ -81,7 +81,7 @@ Descrição da Tabela B
 
 | Coluna(s) |
 | --------- |
-| id        |
+| idSetor   |
 
 - **Unicidade** (valores únicos)*:
 
