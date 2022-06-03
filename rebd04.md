@@ -15,13 +15,16 @@ Descrição da Tabela A
 
 #### COLUNAS 
 
-| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| ANIMAL   | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| id       | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
-| data     | Data do registo           | DATE        | now()       | Não        | Não  |
-| nome     | Nome do registo           | VARCHAR(50) | -           | Não        | Não  |
-| conteudo | Conteudo do documento     | TEXT        | -           | Não        | Sim  |
-| tipo     | tipo de testes            | BIGINT      | -           | Não        | Sim  |
+| codigo   | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
+| peso     | Peso do animal            | DATE        | now()       | Não        | Não  |
+| idade    | Idade do animal           | VARCHAR(50) | -           | Não        | Não  |
+| nome     | Nome centifico            | TEXT        | -           | Não        | Sim  |
+| data     | Data de nascimento        | BIGINT      | -           | Não        | Sim  |
+| data     | Data de obito             | BIGINT      | -           | Não        | Sim  |
+
+
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
