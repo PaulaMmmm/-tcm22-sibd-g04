@@ -10,7 +10,7 @@ Quem controla as necessidades são os funcionários do Zoo, logo são estes quem
 Para além dos funcionários habituais, também trabalham no Zoo voluntários, que são acompanhados por um supervisor, de forma a terem ajuda nas suas tarefas.
 
 Todos estes funcionários (sejam voluntários ou não) possuem um horário fixo, com uma hora de entrada, uma hora de saída e uma data. 
-De forma a haver um controlo sob as visitas efetuadas ao Zoo, pretende-se armazenar os dados dos clientes (nome, ID de cliente, idade, email, cartão de cidadão e contacto). Relativamente aos bilhetes, são identificados graças ao ID do cliente e código do bilhete, e tem também um preço e uma faixa etária (sénior, criança, adulto), que poderá trazer descontos para os visitantes. Os descontos são verificados com a ajuda do atributo código de funcionário. O cliente pode realizar visitas de grupo (caso o responsável faça parte de uma empresa, escola ou associação), sendo importante saber o nome do grupo e o número de participantes. Estas visitas tem um horário com a data, hora de entrada e hora de saída.
+De forma a haver um controlo sob as visitas efetuadas ao Zoo, pretende-se armazenar os dados dos clientes (nome, ID de cliente, idade, email, cartão de cidadão e contacto). Relativamente aos bilhetes, são identificados graças ao ID do cliente e código do bilhete, e tem também um preço e uma faixa etária (sénior, criança, adulto), que poderá trazer descontos para os visitantes. Os descontos são verificados com a ajuda do atributo código de funcionário. O cliente pode realizar visitas de grupo (caso o responsável faça parte de uma empresa, escola ou associação), sendo importante saber o nome do grupo e o número de participantes. Estas visitas tem um horário com a data, hora de entrada e hora de saída. 
 
 Colocamos à disposição dos clientes de apadrinhar um animal e desta forma contribuir com os cuidados necessários para o bem-estar dessa ou dessas espécies. 
 
@@ -25,7 +25,6 @@ Supervisores podem alterar informações relativas aos voluntários, visto que s
 Os animais são o foco principal do Zoo. Todos têm requisitos que devem ser cumpridos pelos funcionários do zoo.
 
 Os clientes são os visitantes do zoo. Podem comprar três tipos distintos de bilhetes e podem apadrinhar um ou vários animais do zoo.
-
 
 ---
 [< Previous](rebd00.md) | [^ Main]() | [Next >](rebd02.md)
