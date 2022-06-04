@@ -217,7 +217,7 @@ Armazena dados relativos a todos os funcionários do zoo.
 | codFuncionario | identificador da tabela F          | CHAR(10)    | -           | Sim        | Não  |
 | nome           | Nome do funcionario                | VARCHAR(50) | -           | Não        | Não  |
 | cc             | CC do funcionario                  | CHAR(12)    | -           | Não        | Não  |
-| contacto       | Contacto do funcionario            | TINYINT     | -           | Não        | Não  |
+| contacto       | Contacto do funcionario            | CHAR(9)     | -           | Não        | Não  |
 | horaEntrada    | hora de entrada do funcionario     | TIME        | -           | Não        | Não  |
 | horaSaida      | hora de saida do funcionario       | TIME        | -           | Não        | Não  |
 | data           | data em que o funcionario trabalha | DATE        | now()       | Não        | Não  |
@@ -365,7 +365,7 @@ Armazena dados relativos aos clientes (visitantes ou padrinhos)
 | idade     | Idade do cliente          | TINYINT     | now()       | Não        | Não  |
 | email     | Email do cliente          | VARCHAR(50) | -           | Não        | Sim  |
 | cc        | CC do cliente             | CHAR(12)    | -           | Não        | Não  |
-| contacto  | Contacto do cliente       | TINYINT     | -           | Não        | Sim  |
+| contacto  | Contacto do cliente       | CHAR(9)     | -           | Não        | Sim  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
