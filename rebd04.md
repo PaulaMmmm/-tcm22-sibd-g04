@@ -364,7 +364,7 @@ Armazena dados relativos aos clientes (visitantes ou padrinhos)
 | nome      | Nome do cliente           | VARCHAR(50) | -           | Não        | Não  |
 | idade     | Idade do cliente          | TINYINT     | now()       | Não        | Não  |
 | email     | Email do cliente          | VARCHAR(50) | -           | Não        | Sim  |
-| CC        | CC do cliente             | CHAR(12)    | -           | Não        | Não  |
+| cc        | CC do cliente             | CHAR(12)    | -           | Não        | Não  |
 | contacto  | Contacto do cliente       | TINYINT     | -           | Não        | Sim  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
@@ -380,7 +380,7 @@ Armazena dados relativos aos clientes (visitantes ou padrinhos)
 | Nome             | Coluna(s) | Indexar |
 | ---------------- | --------- | ------- |
 | idCliente_unique | idCliente | Sim     |
-| CC_unique        | CC        | Sim     |
+| cc_unique        | cc        | Sim     |
 
 
 
