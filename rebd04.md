@@ -50,15 +50,11 @@ Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
 
 - **Referêncial** (chaves estrangeiras)*:
 
-| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
-| ----- | --------- | ------------------- | ------------------------- | ------- |
-| ta_fk | tipo      | Tabela_c            | id                        | Não     |
+| Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| -----     | --------- | ------------------- | ------------------------- | ------- |
+| idCliente | ?         | Tabela_j            | codAnimal                 | Não     |
 
-- **Atributos** (check)*:
 
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
 
 
 
@@ -85,6 +81,18 @@ A tabela SETOR armazena os dados referentes aos habitats. Dentro destes existem 
 | --------- |
 | idSetor   |
 
+- **Unicidade** (valores únicos)*:
+
+| Nome             | Coluna(s) | Indexar |
+| ---------------- | --------- | ------- |
+| idSetor_unique   | idSetor   | Sim     |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| -----     | --------- | ------------------- | ------------------------- | ------- |
+| idArea    | ?         | Tabela_e            | idSetor                   | ?       |
+
 
 
 ### Tabela_c
@@ -110,6 +118,20 @@ Armazena dados ainda mais pormenorizados acerca dos animais.
 | Coluna(s) |
 | --------- |
 | idEspecie |
+
+
+- **Unicidade** (valores únicos)*:
+
+| Nome             | Coluna(s) | Indexar |
+| ---------------- | --------- | ------- |
+| idEspecie_unique | idEspecie | Sim     |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| -----     | --------- | ------------------- | ------------------------- | ------- |
+| codAnimal | ?         | Tabela_a            | idEspecie                 | ?       |
+
 
 ### Tabela_d
 
