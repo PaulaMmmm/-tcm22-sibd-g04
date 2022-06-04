@@ -105,7 +105,45 @@ CREATE TABLE IF NOT EXISTS `tabela_j` (
 
 ## DML
 
+###Tabela_a
 
+![An alternative description](tabela_a.jpeg)  
+
+###Tabela_b
+
+![An alternative description](tabela_b.jpeg)  
+
+###Tabela_c
+
+![An alternative description](tabela_c.jpeg)  
+
+###Tabela_d
+
+![An alternative description](tabela_d.jpeg)  
+
+###Tabela_e
+
+![An alternative description](tabela_e.jpeg)  
+
+###Tabela_f
+
+![An alternative description](tabela_f.jpeg)  
+
+###Tabela_g
+
+![An alternative description](tabela_g.jpeg)  
+
+###Tabela_h
+
+![An alternative description](tabela_h.jpeg)  
+
+###Tabela_i
+
+![An alternative description](tabela_i.jpeg) 
+
+###Tabela_j
+
+![An alternative description](tabela_j.jpeg)  
 ---
 [< Previous](rebd04.md) | [^ Main]() | Next >
 :--- | :---: | ---: 
