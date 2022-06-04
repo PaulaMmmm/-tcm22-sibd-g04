@@ -17,7 +17,7 @@ Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
 
 | ANIMAL     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| codAnimal  | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
+| codAnimal  | identificador da tabela A | CHAR(10)    | -           | Sim        | Não  |
 | peso       | Peso do animal            | SMALLINT    | -           | Não        | Não  |
 | idade      | Idade do animal           | SMALLINT    | -           | Não        | Não  |
 | nome       | Nome centifico            | VARCHAR(50) | -           | Não        | Não  |
@@ -70,7 +70,7 @@ A tabela SETOR armazena os dados referentes aos habitats. Dentro destes existem 
 
 | SETOR    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idSetor  | identificador da tabela B | VARCHAR(10) | -           | Sim        | Não  |
+| idSetor  | identificador da tabela B | CHAR(10)    | -           | Sim        | Não  |
 | local    | Local do setor            | VARCHAR(50) | -           | Não        | Não  |
 | tema     | Tema de cada setor        | VARCHAR(50) | -           | Não        | Não  |
 
@@ -95,7 +95,7 @@ Armazena dados ainda mais pormenorizados acerca dos animais.
 
 | ESPECIE          | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------         | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idEspecie        | identificador da tabela D | VARCHAR(109 | -           | Sim        | Não  |
+| idEspecie        | identificador da tabela C | CHAR(10)    | -           | Sim        | Não  |
 | nome             | nome da especie           | BIGINT      | -           | Não        | Não  |
 | quantidadeComida | quantidade da comida      | BIGINT      | -           | Não        | Não  |
 | dieta            | dieta do espécie          | VARCHAR(50) | -           | Não        | Não  |
@@ -119,7 +119,7 @@ Armazena dados das vacinas administradas aos animais.
 
 | VACINA   | Descrição                 | Domínio      | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :----------  | :---------- | :--------- | :--- |
-| idVacina | identificador da tabela E | BIGINT       | -           | Sim        | Não  |
+| idVacina | identificador da tabela D | CHAR(10)     | -           | Sim        | Não  |
 | nome     | nome da vacina            | VARCHART(50) | -           | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
@@ -140,7 +140,7 @@ Armazena dados relativos à area de habitação de cada espécie.
 
 | AREA            | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idArea          | identificador da tabela F | BIGINT      | -           | Sim        | Não  |
+| idArea          | identificador da tabela E | CHAR(10)    | -           | Sim        | Não  |
 | numAnimais      | Número de animais na área | SMALLINT    | -           | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
@@ -162,9 +162,9 @@ Armazena dados relativos a todos os funcionários do zoo.
 
 | FUNCIONARIO    | Descrição                          | Domínio     | por Omissão | Automático | Nulo |
 | :-------       | :------------------------          | :---------- | :---------- | :--------- | :--- |
-| CodFuncionario | identificador da tabela H          | BIGINT      | -           | Sim        | Não  |
+| CodFuncionario | identificador da tabela F          | CHAR(10)    | -           | Sim        | Não  |
 | nome           | Nome do funcionario                | VARCHAR(50) | -           | Não        | Não  |
-| CC             | CC do funcionario                  | VARCHAR(12) | -           | Não        | Não  |
+| CC             | CC do funcionario                  | CHAR(12)    | -           | Não        | Não  |
 | contacto       | Contacto do funcionario            | TINYINT     | -           | Não        | Não  |
 | horaEntrada    | hora de entrada do funcionario     | TIME        | -           | Não        | Não  |
 | horaSaida      | hora de saida do funcionario       | TIME        | -           | Não        | Não  |
@@ -189,7 +189,7 @@ Armazena todos os dados relativos aos bilhetes vendidos pelo Zoo.
 
 | BILHETE    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| codBilhete | identificador da tabela J | BIGINT      | -           | Sim        | Não  |
+| codBilhete | identificador da tabela G | BIGINT      | -           | Sim        | Não  |
 | preco      | Preço dos bilhetes        | FLOAT       | -           | Não        | Não  |
 | faixaEtaria| faixa etária dos bilhetes | VARCHAR(10) | -           | Não        | Não  |
 
@@ -218,13 +218,13 @@ Armazena o valor dos descontos.
 
 #### VISITASGRUPO    
 
-Armazena todos os dados relativos às vistitas marcadas em grupos.
+Armazena todos os dados relativos às visitas marcadas em grupos.
 
 #### COLUNAS 
 
 | VISITASGRUPO        | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------            | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idVG                | identificador da tabela L | VARCHAR(10) | -           | Sim        | Não  |
+| idVG                | identificador da tabela I | CHAR(10)    | -           | Sim        | Não  |
 | nome                | nome do grupo             | VARCHAR(30) | -           | Não        | Não  |
 | numeroParticipantes | numero de participantes   | TINYINT     | -           | Não        | Não  |
 | horaEntrada         | hora de entrada do grupo  | TIME        | -           | Não        | Não  |
@@ -244,18 +244,18 @@ Armazena todos os dados relativos às vistitas marcadas em grupos.
 
 #### CLIENTE 
 
-Descrição da Tabela M
+Armazena dados relativos aos clientes (visitantes ou padrinhos)
 
 #### COLUNAS 
 
 | CLIENTE   | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------  | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idCliente | identificador da tabela M | BIGINT      | -           | Sim        | Não  |
-| nome      | Nome do cliente           | DATE        | now()       | Não        | Não  |
-| idade     | Idade do cliente          | VARCHAR(50) | -           | Não        | Não  |
-| email     | Email do cliente          | TEXT        | -           | Não        | Sim  |
-| CC        | CC do cliente             | BIGINT      | -           | Não        | Sim  |
-| contacto  | Contacto do cliente       | BIGINT      | -           | Não        | Sim  |
+| idCliente | identificador da tabela J | CHAR(10)    | -           | Sim        | Não  |
+| nome      | Nome do cliente           | VARCHAR(50) | -           | Não        | Não  |
+| idade     | Idade do cliente          | TINYINT     | now()       | Não        | Não  |
+| email     | Email do cliente          | VARCHAR(50) | -           | Não        | Sim  |
+| CC        | CC do cliente             | CHAR(12)    | -           | Não        | Não  |
+| contacto  | Contacto do cliente       | TINYINT     | -           | Não        | Sim  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
@@ -264,18 +264,6 @@ Descrição da Tabela M
 | Coluna(s) |
 | --------- |
 | idCliente |
-
-### Tabela_k
-
-#### FUNCAO  
-
-Descrição da Tabela N
-
-#### COLUNAS 
-
-| FUNCAO | Descrição      | Domínio     | por Omissão | Automático | Nulo |
-| :----  | :------------- | :---------- | :---------- | :--------- | :--- |
-| nome   | nome da função | BIGINT      | -           | Sim        | Não  |
 
 
 ## Vistas
