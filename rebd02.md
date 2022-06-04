@@ -2,6 +2,8 @@
 
 ## Modelo E/A
 
+(.jpeg)
+
 ## Regras de negócio adicionais (Restrições)
 
 • Só vamos registar um contacto para cada cliente.
