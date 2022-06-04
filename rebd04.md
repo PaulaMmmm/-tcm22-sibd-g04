@@ -214,9 +214,9 @@ Armazena dados relativos a todos os funcionários do zoo.
 
 | FUNCIONARIO    | Descrição                          | Domínio     | por Omissão | Automático | Nulo |
 | :-------       | :------------------------          | :---------- | :---------- | :--------- | :--- |
-| CodFuncionario | identificador da tabela F          | CHAR(10)    | -           | Sim        | Não  |
+| codFuncionario | identificador da tabela F          | CHAR(10)    | -           | Sim        | Não  |
 | nome           | Nome do funcionario                | VARCHAR(50) | -           | Não        | Não  |
-| CC             | CC do funcionario                  | CHAR(12)    | -           | Não        | Não  |
+| cc             | CC do funcionario                  | CHAR(12)    | -           | Não        | Não  |
 | contacto       | Contacto do funcionario            | TINYINT     | -           | Não        | Não  |
 | horaEntrada    | hora de entrada do funcionario     | TIME        | -           | Não        | Não  |
 | horaSaida      | hora de saida do funcionario       | TIME        | -           | Não        | Não  |
@@ -229,13 +229,13 @@ Armazena dados relativos a todos os funcionários do zoo.
 
 | Coluna(s)      |
 | ---------      |
-| CodFuncionario |
+| codFuncionario |
 
 - **Unicidade** (valores únicos)*:
 
 | Nome                  | Coluna(s)      | Indexar |
 | ----------------      | ---------      | ------- |
-| CodFuncionario_unique | CodFuncionario | Sim     |
+| codFuncionario_unique | codFuncionario | Sim     |
 
 
 
