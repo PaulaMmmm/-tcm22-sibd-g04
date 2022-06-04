@@ -2,7 +2,7 @@
 
 ## Modelo E/A
 
-(Diagrama.png) 
+![An alternative description](Diagrama.png) 
 
 ## Regras de negócio adicionais (Restrições)
 
