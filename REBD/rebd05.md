@@ -105,6 +105,8 @@ CREATE TABLE IF NOT EXISTS `tabela_j` (
 
 ## DML
 
+Nos exemplos pretendemos inserir dados em todas as colunas e esperávamos que nos mostrasse a linha criada.
+
 ### Tabela_a
 
 ![An alternative description](tabela_a.png)  
