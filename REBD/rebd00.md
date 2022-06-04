@@ -15,5 +15,5 @@
 * Daniela Silva [@danielasilva2602](https://github.com/Danielasilva2602)
 
 ---
-< Previous | [^ Main][(https://github.com/PaulaMmmm/-tcm22-sibd-g04/tree/main/REBD)] | [Next >](rebd01.md)
+< Previous | [^ Main](https://github.com/PaulaMmmm/-tcm22-sibd-g04/tree/main/REBD) | [Next >](rebd01.md)
 :--- | :---: | ---: 
