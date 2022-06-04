@@ -384,11 +384,6 @@ Armazena dados relativos aos clientes (visitantes ou padrinhos)
 
 
 
-
-## Vistas
-
-
-
 ---
 | [< Previous](rebd03.md) | [^ Main]() | [Next >](rebd05.md) |
 | :---------------------- | :------------------------------------------------------: | ------------------: |
