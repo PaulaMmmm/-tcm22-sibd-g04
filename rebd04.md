@@ -106,10 +106,10 @@ Armazena dados ainda mais pormenorizados acerca dos animais.
 | ESPECIE          | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------         | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | idEspecie        | identificador da tabela C | CHAR(10)    | -           | Sim        | Não  |
-| nome             | nome da especie           | BIGINT      | -           | Não        | Não  |
-| quantidadeComida | quantidade da comida      | BIGINT      | -           | Não        | Não  |
-| dieta            | dieta do espécie          | VARCHAR(50) | -           | Não        | Não  |
-| tipo             | tipo de espécie           | VARCHAR(50) | -           | Não        | Não  |
+| nome             | nome da especie           | VARCHAR(20) | -           | Não        | Não  |
+| quantidadeComida | quantidade da comida      | INT         | -           | Não        | Não  |
+| dieta            | dieta do espécie          | VARCHAR(20) | -           | Não        | Não  |
+| tipo             | tipo de espécie           | VARCHAR(20) | -           | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
