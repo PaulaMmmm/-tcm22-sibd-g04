@@ -146,6 +146,6 @@ CREATE TABLE IF NOT EXISTS `tabela_j` (
 ![An alternative description](tabela_j.png)  
 
 ---
-[< Previous](rebd04.md) | [^ Main]() | Next >
+[< Previous](rebd04.md) | [^ Main](https://github.com/PaulaMmmm/-tcm22-sibd-g04/tree/main/REBD) | Next >
 :--- | :---: | ---: 
 
