@@ -298,9 +298,9 @@ Armazena o valor dos descontos.
 
 - **Unicidade** (valores únicos)*:
 
-| Nome             | Coluna(s) | Indexar |
-| ---------------- | --------- | ------- |
-| idVG_unique      | idVG      | Sim     |
+| Nome                | Coluna(s)    | Indexar |
+| ------------------- | ------------ | ------- |
+| nomeDesconto_unique | nomeDesconto | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
