@@ -249,7 +249,7 @@ Armazena todos os dados relativos aos bilhetes vendidos pelo Zoo.
 
 | BILHETE    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| codBilhete | identificador da tabela G | BIGINT      | -           | Sim        | Não  |
+| codBilhete | identificador da tabela G | CHAR(15)    | -           | Sim        | Não  |
 | preco      | Preço dos bilhetes        | FLOAT       | -           | Não        | Não  |
 | faixaEtaria| faixa etária dos bilhetes | VARCHAR(10) | -           | Não        | Não  |
 
