@@ -143,8 +143,8 @@ Armazena dados das vacinas administradas aos animais.
 
 | VACINA   | Descrição                 | Domínio      | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :----------  | :---------- | :--------- | :--- |
-| idVacina | identificador da tabela D | CHAR(10)     | -           | Sim        | Não  |
-| nome     | nome da vacina            | VARCHART(50) | -           | Não        | Não  |
+| idVac    | identificador da tabela D | CHAR(10)     | -           | Sim        | Não  |
+| nomeVac  | nome da vacina            | VARCHART(50) | -           | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
