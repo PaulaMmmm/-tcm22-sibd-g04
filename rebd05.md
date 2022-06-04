@@ -107,43 +107,43 @@ CREATE TABLE IF NOT EXISTS `tabela_j` (
 
 ### Tabela_a
 
-![An alternative description](tabela_a.jpeg)  
+![An alternative description](tabela_a.png)  
 
 ### Tabela_b
 
-![An alternative description](tabela_b.jpeg)  
+![An alternative description](tabela_b.png)  
 
 ### Tabela_c
 
-![An alternative description](tabela_c.jpeg)  
+![An alternative description](tabela_c.png)  
 
 ### Tabela_d
 
-![An alternative description](tabela_d.jpeg)  
+![An alternative description](tabela_d.png)  
 
 ### Tabela_e
 
-![An alternative description](tabela_e.jpeg)  
+![An alternative description](tabela_e.png)  
 
 ### Tabela_f
 
-![An alternative description](tabela_f.jpeg)  
+![An alternative description](tabela_f.png)  
 
 ### Tabela_g
 
-![An alternative description](tabela_g.jpeg)  
+![An alternative description](tabela_g.png)  
 
 ### Tabela_h
 
-![An alternative description](tabela_h.jpeg)  
+![An alternative description](tabela_h.png)  
 
 ### Tabela_i
 
-![An alternative description](tabela_i.jpeg) 
+![An alternative description](tabela_i.png) 
 
 ### Tabela_j
 
-![An alternative description](tabela_j.jpeg)  
+![An alternative description](tabela_j.png)  
 
 ---
 [< Previous](rebd04.md) | [^ Main]() | Next >
