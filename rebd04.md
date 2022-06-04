@@ -26,7 +26,7 @@ Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
 | ANIMAL     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | codAnimal  | identificador da tabela A | CHAR(10)    | -           | Sim        | Não  |
-| peso       | Peso do animal            | SMALLINT    | -           | Não        | Não  |
+| peso       | Peso do animal            | DECIMAL     | -           | Não        | Não  |
 | idade      | Idade do animal           | SMALLINT    | -           | Não        | Não  |
 | nome       | Nome centifico            | VARCHAR(50) | -           | Não        | Não  |
 | dataNasc   | Data de nascimento        | DATETIME    | now()       | Não        | Não  |
