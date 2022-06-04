@@ -19,7 +19,7 @@
 
 #### ANIMAL
 
-Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
+Consiste numa tabela que armazena todos os dados básicos de cada animal do Zoo
 
 #### COLUNAS 
 
