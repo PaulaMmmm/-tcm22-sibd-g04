@@ -132,6 +132,24 @@ Armazena dados das vacinas administradas aos animais.
 | --------- |
 | idVacina  |
 
+- **Unicidade** (valores únicos)*:
+
+| Nome             | Coluna(s) | Indexar |
+| ---------------- | --------- | ------- |
+| idVacina_unique  | idVacina  | Sim     |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| -----      | --------- | ------------------- | ------------------------- | ------- |
+| codAnimal  | ?         | Tabela_a            | idVacina                  | Não     |
+
+- **Atributos** (check)*:
+
+| Nome | Coluna(s) | condição |
+| ---- | --------- | -------- |
+|      |           |          |
+
 ### Tabela_e
 
 #### AREA    
@@ -152,6 +170,24 @@ Armazena dados relativos à area de habitação de cada espécie.
 | Coluna(s) |
 | --------- |
 | idArea    |
+
+- **Unicidade** (valores únicos)*:
+
+| Nome             | Coluna(s) | Indexar |
+| ---------------- | --------- | ------- |
+| idArea_unique    | idArea    | Sim     |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| -----      | --------- | ------------------- | ------------------------- | ------- |
+| idEspecie  | ?         | Tabela_c            | idArea                    | Não     |
+
+- **Atributos** (check)*:
+
+| Nome | Coluna(s) | condição |
+| ---- | --------- | -------- |
+|      |           |          |
 
 
 ### Tabela_f
@@ -181,6 +217,18 @@ Armazena dados relativos a todos os funcionários do zoo.
 | ---------      |
 | CodFuncionario |
 
+- **Unicidade** (valores únicos)*:
+
+| Nome                  | Coluna(s)      | Indexar |
+| ----------------      | ---------      | ------- |
+| CodFuncionario_unique | CodFuncionario | Sim     |
+
+- **Atributos** (check)*:
+
+| Nome | Coluna(s) | condição |
+| ---- | --------- | -------- |
+|      |           |          |
+
 ### Tabela_g
 
 #### BILHETE      
@@ -205,15 +253,15 @@ Armazena todos os dados relativos aos bilhetes vendidos pelo Zoo.
 
 - **Unicidade** (valores únicos)*:
 
-| Nome             | Coluna(s) | Indexar |
-| ---------------- | --------- | ------- |
-| idVG_unique      | idVG      | Sim     |
+| Nome              | Coluna(s)  | Indexar |
+| ----------------  | ---------  | ------- |
+| codBilhete_unique | codBilhete | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----      | --------- | ------------------- | ------------------------- | ------- |
-| codBilhete | ?         | Tabela_g            | nomeDesconto              | Não     |
+| idCliente  | ?         | Tabela_j           | codBilhete                | Não     |
 
 - **Atributos** (check)*:
 
