@@ -19,7 +19,7 @@
 
 #### ANIMAL
 
-Consiste numa tabela que armazena todos os dados básicos de cada animal do Zoo
+Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
 
 #### COLUNAS 
 
@@ -44,9 +44,9 @@ Consiste numa tabela que armazena todos os dados básicos de cada animal do Zoo
 
 - **Unicidade** (valores únicos)*:
 
-| Nome        | Coluna(s) | Indexar |
-| ----------- | --------- | ------- |
-| nome_unique | nome      | Sim     |
+| Nome             | Coluna(s) | Indexar |
+| ---------------- | --------- | ------- |
+| codAnimal_unique | codAnimal | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
@@ -60,13 +60,7 @@ Consiste numa tabela que armazena todos os dados básicos de cada animal do Zoo
 | ---- | --------- | -------- |
 |      |           |          |
 
-- **Outros Indices***:
 
-| Nome | Coluna(s) |
-| ---- | --------- |
-|      |           |
-
- 
 
 ### Tabela_b
 
