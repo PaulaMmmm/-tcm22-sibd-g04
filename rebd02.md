@@ -2,7 +2,7 @@
 
 ## Modelo E/A
 
-(.jpeg)
+(Diagrama.png) 
 
 ## Regras de negócio adicionais (Restrições)
 
