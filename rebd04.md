@@ -104,11 +104,11 @@ Descrição da Tabela D
 
 #### COLUNAS 
 
-| ESPECIE         | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idEspecie       | identificador da tabela D | BIGINT      | -           | Sim        | Não  |
-| nome            | nome da especie           | BIGINT      | -           | Sim        | Não  |
-| quantidadeComida| nome da especie           | BIGINT      | -           | Sim        | Não  |
+| ESPECIE    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| idEspecie  | identificador da tabela D | BIGINT      | -           | Sim        | Não  |
+| nome       | nome da especie           | BIGINT      | -           | Sim        | Não  |
+| quantidade | quantidade da comida      | BIGINT      | -           | Sim        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
