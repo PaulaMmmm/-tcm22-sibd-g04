@@ -11,18 +11,18 @@
 
 #### ANIMAL
 
-Descrição da Tabela A
+Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
 
 #### COLUNAS 
 
 | ANIMAL     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | codAnimal  | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
-| peso       | Peso do animal            | DATE        | now()       | Não        | Não  |
-| idade      | Idade do animal           | VARCHAR(50) | -           | Não        | Não  |
-| nome       | Nome centifico            | TEXT        | -           | Não        | Sim  |
-| data       | Data de nascimento        | BIGINT      | -           | Não        | Sim  |
-| data       | Data de obito             | BIGINT      | -           | Não        | Sim  |
+| peso       | Peso do animal            | SMALLINT    | -           | Não        | Não  |
+| idade      | Idade do animal           | SMALLINT    | -           | Não        | Não  |
+| nome       | Nome centifico            | VARCHAR(50) | -           | Não        | Não  |
+| dataNasc   | Data de nascimento        | DATETIME    | now()       | Não        | Não  |
+| dataObito  | Data de obito             | DATETIME    | now()       | Não        | Não  |
 
 
 
@@ -64,14 +64,14 @@ Descrição da Tabela A
 
 #### SETOR 
 
-Descrição da Tabela B
+A tabela SETOR armazena os dados referentes aos habitats. Dentro destes existem áreas onde as especies vivem separadamente.
 
 #### COLUNAS 
 
 | SETOR    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idSetor  | identificador da tabela B | BIGINT      | -           | Sim        | Não  |
-| local    | Local do setor            | DATE        | now()       | Não        | Não  |
+| idSetor  | identificador da tabela B | VARCHAR(10) | -           | Sim        | Não  |
+| local    | Local do setor            | VARCHAR(50) | -           | Não        | Não  |
 | tema     | Tema de cada setor        | VARCHAR(50) | -           | Não        | Não  |
 
 
@@ -84,31 +84,22 @@ Descrição da Tabela B
 | idSetor   |
 
 
+
 ### Tabela_c
-
-#### DIETA  
-
-Descrição da Tabela C
-
-#### COLUNAS 
-
-| DIETA    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| nomeDieta| identificador da tabela C | BIGINT      | -           | Sim        | Não  |
-
-### Tabela_d
 
 #### ESPECIE   
 
-Descrição da Tabela D
+Armazena dados ainda mais pormenorizados acerca dos animais.
 
 #### COLUNAS 
 
-| ESPECIE    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idEspecie  | identificador da tabela D | BIGINT      | -           | Sim        | Não  |
-| nome       | nome da especie           | BIGINT      | -           | Sim        | Não  |
-| quantidade | quantidade da comida      | BIGINT      | -           | Sim        | Não  |
+| ESPECIE          | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------         | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| idEspecie        | identificador da tabela D | VARCHAR(109 | -           | Sim        | Não  |
+| nome             | nome da especie           | BIGINT      | -           | Não        | Não  |
+| quantidadeComida | quantidade da comida      | BIGINT      | -           | Não        | Não  |
+| dieta            | dieta do espécie          | VARCHAR(50) | -           | Não        | Não  |
+| tipo             | tipo de espécie           | VARCHAR(50) | -           | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
@@ -118,18 +109,18 @@ Descrição da Tabela D
 | --------- |
 | idEspecie |
 
-### Tabela_e
+### Tabela_d
 
 #### VACINA    
 
-Descrição da Tabela E
+Armazena dados das vacinas administradas aos animais.
 
 #### COLUNAS 
 
-| VACINA   | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idVacina | identificador da tabela E | BIGINT      | -           | Sim        | Não  |
-| nome     | nome da vacina            | BIGINT      | -           | Sim        | Não  |
+| VACINA   | Descrição                 | Domínio      | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :----------  | :---------- | :--------- | :--- |
+| idVacina | identificador da tabela E | BIGINT       | -           | Sim        | Não  |
+| nome     | nome da vacina            | VARCHART(50) | -           | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
@@ -139,19 +130,18 @@ Descrição da Tabela E
 | --------- |
 | idVacina  |
 
-### Tabela_f
+### Tabela_e
 
 #### AREA    
 
-Descrição da Tabela F
+Armazena dados relativos à area de habitação de cada espécie.
 
 #### COLUNAS 
 
 | AREA            | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------        | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | idArea          | identificador da tabela F | BIGINT      | -           | Sim        | Não  |
-| capacidadeMax   | Capacidade maxima da area | BIGINT      | -           | Sim        | Não  |
-| quantidadeComida|                           | BIGINT      | -           | Sim        | Não  |
+| numAnimais      | Número de animais na área | SMALLINT    | -           | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
@@ -161,32 +151,25 @@ Descrição da Tabela F
 | --------- |
 | idArea    |
 
-### Tabela_g
 
-#### TIPO     
-
-Descrição da Tabela G
-
-#### COLUNAS 
-
-| TIPO  | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :---- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| nome  | Nome do tipo de especie   | BIGINT      | -           | Sim        | Não  |
-
-### Tabela_h
+### Tabela_f
 
 #### FUNCIONARIO     
 
-Descrição da Tabela H
+Armazena dados relativos a todos os funcionários do zoo.
 
 #### COLUNAS 
 
-| FUNCIONARIO   | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :-------      | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| CodFuncionario| identificador da tabela H | BIGINT      | -           | Sim        | Não  |
-| nome          | Nome do funcionario       | BIGINT      | -           | Sim        | Não  |
-| CC            | CC do funcionario         | BIGINT      | -           | Sim        | Não  |
-| contacto      | Contacto do funcionario   | BIGINT      | -           | Sim        | Não  |
+| FUNCIONARIO    | Descrição                          | Domínio     | por Omissão | Automático | Nulo |
+| :-------       | :------------------------          | :---------- | :---------- | :--------- | :--- |
+| CodFuncionario | identificador da tabela H          | BIGINT      | -           | Sim        | Não  |
+| nome           | Nome do funcionario                | VARCHAR(50) | -           | Não        | Não  |
+| CC             | CC do funcionario                  | VARCHAR(12) | -           | Não        | Não  |
+| contacto       | Contacto do funcionario            | TINYINT     | -           | Não        | Não  |
+| horaEntrada    | hora de entrada do funcionario     | TIME        | -           | Não        | Não  |
+| horaSaida      | hora de saida do funcionario       | TIME        | -           | Não        | Não  |
+| data           | data em que o funcionario trabalha | DATE        | now()       | Não        | Não  |
+| funcao         | função do funcionario              | VARCHAR(50) | -           | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
@@ -196,41 +179,19 @@ Descrição da Tabela H
 | ---------      |
 | CodFuncionario |
 
-### Tabela_i
-
-#### HORARIO     
-
-Descrição da Tabela I
-
-#### COLUNAS 
-
-| HORARIO    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| data       | Data do evento            | BIGINT      | -           | Sim        | Não  |
-| horaEntrada| Hora de entrada no        | BIGINT      | -           | Sim        | Não  |
-| horaSaida  | CC do funcionario         | BIGINT      | -           | Sim        | Não  |
-
-#### RESTRIÇÕES DE INTEGRIDADE 
-
-- **Chave Primária**: 
-
-| Coluna(s) |
-| --------- |
-| data      |
-
-### Tabela_j
+### Tabela_g
 
 #### BILHETE      
 
-Descrição da Tabela J
+Armazena todos os dados relativos aos bilhetes vendidos pelo Zoo.
 
 #### COLUNAS 
 
 | BILHETE    | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :-------   | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | codBilhete | identificador da tabela J | BIGINT      | -           | Sim        | Não  |
-| preço      | Preço dos bilhetes        | BIGINT      | -           | Sim        | Não  |
-| faixaEtaria|                           | BIGINT      | -           | Sim        | Não  |
+| preco      | Preço dos bilhetes        | FLOAT       | -           | Não        | Não  |
+| faixaEtaria| faixa etária dos bilhetes | VARCHAR(10) | -           | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
@@ -240,32 +201,35 @@ Descrição da Tabela J
 | ---------  |
 | codBilhete |
 
-### Tabela_k
+### Tabela_h
 
 #### DESCONTO       
 
-Descrição da Tabela K
+Armazena o valor dos descontos.
 
 #### COLUNAS 
 
 | DESCONTO | Descrição        | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :--------------- | :---------- | :---------- | :--------- | :--- |
-| nome     | Nome do desconto | BIGINT      | -           | Sim        | Não  |
-| valor    | Valor do desconto| BIGINT      | -           | Sim        | Não  |
+| nome     | Nome do desconto | VARCHAR(50) | -           | Não        | Não  |
+| valor    | Valor do desconto| TINYINT     | -           | Não        | Não  |
 
-### Tabela_l
+### Tabela_i
 
 #### VISITASGRUPO    
 
-Descrição da Tabela L
+Armazena todos os dados relativos às vistitas marcadas em grupos.
 
 #### COLUNAS 
 
-| VISITASGRUPO | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
-| :-------     | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| idVG         | identificador da tabela L | BIGINT      | -           | Sim        | Não  |
-| nome         | nome do grupo             | BIGINT      | -           | Sim        | Não  |
-| numero       | numero de participantes   | BIGINT      | -           | Sim        | Não  |
+| VISITASGRUPO        | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :-------            | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| idVG                | identificador da tabela L | VARCHAR(10) | -           | Sim        | Não  |
+| nome                | nome do grupo             | VARCHAR(30) | -           | Não        | Não  |
+| numeroParticipantes | numero de participantes   | TINYINT     | -           | Não        | Não  |
+| horaEntrada         | hora de entrada do grupo  | TIME        | -           | Não        | Não  |
+| horaSaida           | hora de saida do grupo    | TIME        | -           | Não        | Não  |
+| data                | data da visita            | DATE        | now()       | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE 
 
@@ -276,7 +240,7 @@ Descrição da Tabela L
 | idVG      |
 
 
-### Tabela_m
+### Tabela_j
 
 #### CLIENTE 
 
@@ -301,7 +265,7 @@ Descrição da Tabela M
 | --------- |
 | idCliente |
 
-### Tabela_n
+### Tabela_k
 
 #### FUNCAO  
 
