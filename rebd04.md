@@ -152,19 +152,19 @@ Armazena dados das vacinas administradas aos animais.
 
 | Coluna(s) |
 | --------- |
-| idVacina  |
+| idVa      |
 
 - **Unicidade** (valores únicos)*:
 
 | Nome             | Coluna(s) | Indexar |
 | ---------------- | --------- | ------- |
-| idVacina_unique  | idVacina  | Sim     |
+| idVac_unique     | idVac     | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----      | --------- | ------------------- | ------------------------- | ------- |
-| codAnimal  | ?         | Tabela_a            | idVacina                  | Não     |
+| codAnimal  | ?         | Tabela_a            | idVac                     | Não     |
 
 
 
