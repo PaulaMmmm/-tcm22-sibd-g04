@@ -166,11 +166,7 @@ Armazena dados das vacinas administradas aos animais.
 | -----      | --------- | ------------------- | ------------------------- | ------- |
 | codAnimal  | ?         | Tabela_a            | idVacina                  | Não     |
 
-- **Atributos** (check)*:
 
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
 
 ### Tabela_e
 
@@ -205,11 +201,7 @@ Armazena dados relativos à area de habitação de cada espécie.
 | -----      | --------- | ------------------- | ------------------------- | ------- |
 | idEspecie  | ?         | Tabela_c            | idArea                    | Não     |
 
-- **Atributos** (check)*:
 
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
 
 
 ### Tabela_f
@@ -245,11 +237,7 @@ Armazena dados relativos a todos os funcionários do zoo.
 | ----------------      | ---------      | ------- |
 | CodFuncionario_unique | CodFuncionario | Sim     |
 
-- **Atributos** (check)*:
 
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
 
 ### Tabela_g
 
@@ -285,11 +273,7 @@ Armazena todos os dados relativos aos bilhetes vendidos pelo Zoo.
 | -----      | --------- | ------------------- | ------------------------- | ------- |
 | idCliente  | ?         | Tabela_j           | codBilhete                | Não     |
 
-- **Atributos** (check)*:
 
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
 
 ### Tabela_h
 
@@ -324,11 +308,7 @@ Armazena o valor dos descontos.
 | -----      | --------- | ------------------- | ------------------------- | ------- |
 | codBilhete | ?         | Tabela_g            | nomeDesconto              | Não     |
 
-- **Atributos** (check)*:
 
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
 
 ### Tabela_i
 
@@ -367,11 +347,7 @@ Armazena todos os dados relativos às visitas marcadas em grupos.
 | -----     | --------- | ------------------- | ------------------------- | ------- |
 | idCliente | ?         | Tabela_j            | idVG                      | Não     |
 
-- **Atributos** (check)*:
 
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
 
 
 ### Tabela_j
@@ -406,12 +382,6 @@ Armazena dados relativos aos clientes (visitantes ou padrinhos)
 | idCliente_unique | idCliente | Sim     |
 | CC_unique        | CC        | Sim     |
 
-
-- **Atributos** (check)*:
-
-| Nome      | Coluna(s) | condição |
-| ----      | --------- | -------- |
-| contacto  | CLIENTE   |          |
 
 
 
