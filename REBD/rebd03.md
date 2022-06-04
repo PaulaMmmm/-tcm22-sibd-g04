@@ -187,6 +187,6 @@ Já se encontra na 3NF
 
 
 ---
-[< Previous](rebd02.md) | [^ Main]() | [Next >](rebd04.md)
+[< Previous](rebd02.md) | [^ Main](https://github.com/PaulaMmmm/-tcm22-sibd-g04/tree/main/REBD) | [Next >](rebd04.md)
 :--- | :---: | ---: 
 
