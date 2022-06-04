@@ -3,6 +3,14 @@
 - [Relações](#relações)
   - [Tabela_a](#tabela_a)
   - [Tabela_b](#tabela_b)
+  - [Tabela_c](#tabela_c)
+  - [Tabela_d](#tabela_d)
+  - [Tabela_e](#tabela_e)
+  - [Tabela_f](#tabela_f)
+  - [Tabela_g](#tabela_g)
+  - [Tabela_h](#tabela_h)
+  - [Tabela_i](#tabela_i)
+  - [Tabela_j](#tabela_j)
 - [Vistas](#vistas)
 
 ## Relações
