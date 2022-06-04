@@ -27,6 +27,6 @@ Os animais são o foco principal do Zoo. Todos têm requisitos que devem ser cum
 Os clientes são os visitantes do zoo. Podem comprar três tipos distintos de bilhetes e podem apadrinhar um ou vários animais do zoo.
 
 ---
-[< Previous](rebd00.md) | [^ Main]() | [Next >](rebd02.md)
+[< Previous](rebd00.md) | [^ Main](https://github.com/PaulaMmmm/-tcm22-sibd-g04/tree/main/REBD) | [Next >](rebd02.md)
 :--- | :---: | ---: 
 
