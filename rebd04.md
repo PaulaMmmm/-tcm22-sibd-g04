@@ -203,6 +203,24 @@ Armazena todos os dados relativos aos bilhetes vendidos pelo Zoo.
 | ---------  |
 | codBilhete |
 
+- **Unicidade** (valores únicos)*:
+
+| Nome             | Coluna(s) | Indexar |
+| ---------------- | --------- | ------- |
+| idVG_unique      | idVG      | Sim     |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| -----      | --------- | ------------------- | ------------------------- | ------- |
+| codBilhete | ?         | Tabela_g            | nomeDesconto              | Não     |
+
+- **Atributos** (check)*:
+
+| Nome | Coluna(s) | condição |
+| ---- | --------- | -------- |
+|      |           |          |
+
 ### Tabela_h
 
 #### DESCONTO       
@@ -211,10 +229,36 @@ Armazena o valor dos descontos.
 
 #### COLUNAS 
 
-| DESCONTO | Descrição        | Domínio     | por Omissão | Automático | Nulo |
-| :------- | :--------------- | :---------- | :---------- | :--------- | :--- |
-| nome     | Nome do desconto | VARCHAR(50) | -           | Não        | Não  |
-| valor    | Valor do desconto| TINYINT     | -           | Não        | Não  |
+| DESCONTO     | Descrição        | Domínio     | por Omissão | Automático | Nulo |
+| :-------     | :--------------- | :---------- | :---------- | :--------- | :--- |
+| nomeDesconto | Nome do desconto | VARCHAR(50) | -           | Não        | Não  |
+| valor        | Valor do desconto| TINYINT     | -           | Não        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE 
+
+- **Chave Primária**: 
+
+| Coluna(s)    |
+| ---------    |
+| nomeDesconto |
+
+- **Unicidade** (valores únicos)*:
+
+| Nome             | Coluna(s) | Indexar |
+| ---------------- | --------- | ------- |
+| idVG_unique      | idVG      | Sim     |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| -----      | --------- | ------------------- | ------------------------- | ------- |
+| codBilhete | ?         | Tabela_g            | nomeDesconto              | Não     |
+
+- **Atributos** (check)*:
+
+| Nome | Coluna(s) | condição |
+| ---- | --------- | -------- |
+|      |           |          |
 
 ### Tabela_i
 
@@ -241,6 +285,24 @@ Armazena todos os dados relativos às visitas marcadas em grupos.
 | --------- |
 | idVG      |
 
+- **Unicidade** (valores únicos)*:
+
+| Nome             | Coluna(s) | Indexar |
+| ---------------- | --------- | ------- |
+| idVG_unique      | idVG      | Sim     |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| -----     | --------- | ------------------- | ------------------------- | ------- |
+| idCliente | ?         | Tabela_j            | idVG                      | Não     |
+
+- **Atributos** (check)*:
+
+| Nome | Coluna(s) | condição |
+| ---- | --------- | -------- |
+|      |           |          |
+
 
 ### Tabela_j
 
@@ -266,6 +328,21 @@ Armazena dados relativos aos clientes (visitantes ou padrinhos)
 | Coluna(s) |
 | --------- |
 | idCliente |
+
+- **Unicidade** (valores únicos)*:
+
+| Nome             | Coluna(s) | Indexar |
+| ---------------- | --------- | ------- |
+| idCliente_unique | idCliente | Sim     |
+| CC_unique        | CC        | Sim     |
+
+
+- **Atributos** (check)*:
+
+| Nome      | Coluna(s) | condição |
+| ----      | --------- | -------- |
+| contacto  | CLIENTE   |          |
+
 
 
 ## Vistas
