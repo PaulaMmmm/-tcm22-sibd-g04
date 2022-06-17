@@ -6,11 +6,11 @@
   - [ESPECIE](#ESPECIE)
   - [VACINA](#VACINA)
   - [AREA](#AREA)
-  - [Tabela_f](#tabela_f)
-  - [Tabela_g](#tabela_g)
-  - [Tabela_h](#tabela_h)
-  - [Tabela_i](#tabela_i)
-  - [Tabela_j](#tabela_j)
+  - [FUNCIONARIO](#FUNCIONARIO)
+  - [BILHETE](#BILHETE)
+  - [DESCONTO](#DESCONTO)
+  - [VISITASGRUPO](#VISITASGRUPO)
+  - [CLIENTE](#CLIENTE)
  
 
 ## Relações
@@ -197,9 +197,9 @@ Armazena dados relativos à area de habitação de cada espécie.
 
 
 
-### Tabela_f
 
-#### FUNCIONARIO     
+
+### FUNCIONARIO     
 
 Armazena dados relativos a todos os funcionários do zoo.
 
@@ -232,9 +232,9 @@ Armazena dados relativos a todos os funcionários do zoo.
 
 
 
-### Tabela_g
 
-#### BILHETE      
+
+### BILHETE      
 
 Armazena todos os dados relativos aos bilhetes vendidos pelo Zoo.
 
@@ -268,9 +268,9 @@ Armazena todos os dados relativos aos bilhetes vendidos pelo Zoo.
 
 
 
-### Tabela_h
 
-#### DESCONTO       
+
+### DESCONTO       
 
 Armazena o valor dos descontos.
 
@@ -303,9 +303,9 @@ Armazena o valor dos descontos.
 
 
 
-### Tabela_i
 
-#### VISITASGRUPO    
+
+### VISITASGRUPO    
 
 Armazena todos os dados relativos às visitas marcadas em grupos.
 
@@ -343,9 +343,9 @@ Armazena todos os dados relativos às visitas marcadas em grupos.
 
 
 
-### Tabela_j
 
-#### CLIENTE 
+
+### CLIENTE 
 
 Armazena dados relativos aos clientes (visitantes ou padrinhos)
 
