@@ -15,9 +15,7 @@
 
 ## Relações
 
-### Tabela_a
-
-#### ANIMAL
+### ANIMAL
 
 Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
 
