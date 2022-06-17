@@ -298,7 +298,7 @@ Armazena todos os dados relativos às visitas marcadas em grupos.
 
 | Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----     | --------- | ------------------- | ------------------------- | ------- |
-| idCliente | ?         | CLIENTE            | idVG                      | Não     |
+| idCliente | ?         | CLIENTE             | idVG                      | Não     |
 
 
 
@@ -334,6 +334,33 @@ Armazena dados relativos aos clientes (visitantes ou padrinhos)
 | ---------------- | --------- | ------- |
 | cc_unique        | cc        | Sim     |
 
+
+
+### APADRINHAR 
+
+A tabela APADRINHAR armazena o valor com que o cliente contribui para ajudar o animal escolhido.
+
+#### COLUNAS 
+
+| APADRINHAR | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :--------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| valor      | valor a contribuir        | FLOAT       | -           | Não        | Sim  |
+
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| idCliente |
+| codAnimal |
+
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| -----     | --------- | ------------------- | ------------------------- | ------- |
+| idCliente | ?         | CLIENTE             | idVG                      | Não     |
+| codAnimal | ?         | ANIMAL              | idVac                     | Não     |
 
 
 ---
