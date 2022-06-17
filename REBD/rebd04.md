@@ -28,7 +28,7 @@ Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
 | idade      | Idade do animal           | SMALLINT    | -           | Não        | Não  |
 | nome       | Nome centifico            | VARCHAR(50) | -           | Não        | Não  |
 | dataNasc   | Data de nascimento        | DATETIME    | now()       | Não        | Não  |
-| dataObito  | Data de obito             | DATETIME    | now()       | Não        | Não  |
+| dataObito  | Data de obito             | DATETIME    | -           | Não        | Não  |
 
 
 
@@ -40,17 +40,13 @@ Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
 | --------- |
 | CodAnimal |
 
-- **Unicidade** (valores únicos)*:
 
-| Nome             | Coluna(s) | Indexar |
-| ---------------- | --------- | ------- |
-| codAnimal_unique | codAnimal | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----     | --------- | ------------------- | ------------------------- | ------- |
-| idCliente | ?         | Tabela_j            | codAnimal                 | Não     |
+| idCliente |           | CLIENTE             | codAnimal                 | Não     |
 
 
 
@@ -76,17 +72,13 @@ A tabela SETOR armazena os dados referentes aos habitats. Dentro destes existem 
 | --------- |
 | idSetor   |
 
-- **Unicidade** (valores únicos)*:
 
-| Nome             | Coluna(s) | Indexar |
-| ---------------- | --------- | ------- |
-| idSetor_unique   | idSetor   | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----     | --------- | ------------------- | ------------------------- | ------- |
-| idArea    | ?         | Tabela_e            | idSetor                   | ?       |
+| idArea    |           | AREA                | idSetor                   | ?       |
 
 
 
@@ -113,17 +105,13 @@ Armazena dados ainda mais pormenorizados acerca dos animais.
 | idEspecie |
 
 
-- **Unicidade** (valores únicos)*:
 
-| Nome             | Coluna(s) | Indexar |
-| ---------------- | --------- | ------- |
-| idEspecie_unique | idEspecie | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----     | --------- | ------------------- | ------------------------- | ------- |
-| codAnimal | ?         | Tabela_a            | idEspecie                 | ?       |
+| codAnimal | ?         | ANIMAL              | idEspecie                 | Sim     |
 
 
 
@@ -147,17 +135,13 @@ Armazena dados das vacinas administradas aos animais.
 | --------- |
 | idVa      |
 
-- **Unicidade** (valores únicos)*:
 
-| Nome             | Coluna(s) | Indexar |
-| ---------------- | --------- | ------- |
-| idVac_unique     | idVac     | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----      | --------- | ------------------- | ------------------------- | ------- |
-| codAnimal  | ?         | Tabela_a            | idVac                     | Não     |
+| codAnimal  | ?         | ANIMAL              | idVac                     | Não     |
 
 
 
@@ -182,17 +166,12 @@ Armazena dados relativos à area de habitação de cada espécie.
 | --------- |
 | idArea    |
 
-- **Unicidade** (valores únicos)*:
-
-| Nome             | Coluna(s) | Indexar |
-| ---------------- | --------- | ------- |
-| idArea_unique    | idArea    | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----      | --------- | ------------------- | ------------------------- | ------- |
-| idEspecie  | ?         | Tabela_c            | idArea                    | Não     |
+| idEspecie  | ?         | ESPECIE             | idArea                    | Não     |
 
 
 
@@ -224,12 +203,6 @@ Armazena dados relativos a todos os funcionários do zoo.
 | ---------      |
 | codFuncionario |
 
-- **Unicidade** (valores únicos)*:
-
-| Nome                  | Coluna(s)      | Indexar |
-| ----------------      | ---------      | ------- |
-| codFuncionario_unique | codFuncionario | Sim     |
-
 
 
 
@@ -254,17 +227,12 @@ Armazena todos os dados relativos aos bilhetes vendidos pelo Zoo.
 | ---------  |
 | codBilhete |
 
-- **Unicidade** (valores únicos)*:
-
-| Nome              | Coluna(s)  | Indexar |
-| ----------------  | ---------  | ------- |
-| codBilhete_unique | codBilhete | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----      | --------- | ------------------- | ------------------------- | ------- |
-| idCliente  | ?         | Tabela_j           | codBilhete                | Não     |
+| idCliente  | ?         | CLIENTE             | codBilhete                | Não     |
 
 
 
@@ -289,17 +257,13 @@ Armazena o valor dos descontos.
 | ---------    |
 | nomeDesconto |
 
-- **Unicidade** (valores únicos)*:
 
-| Nome                | Coluna(s)    | Indexar |
-| ------------------- | ------------ | ------- |
-| nomeDesconto_unique | nomeDesconto | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome       | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----      | --------- | ------------------- | ------------------------- | ------- |
-| codBilhete | ?         | Tabela_g            | nomeDesconto              | Não     |
+| codBilhete | ?         | BILHETE             | nomeDesconto              | Não     |
 
 
 
@@ -328,17 +292,13 @@ Armazena todos os dados relativos às visitas marcadas em grupos.
 | --------- |
 | idVG      |
 
-- **Unicidade** (valores únicos)*:
 
-| Nome             | Coluna(s) | Indexar |
-| ---------------- | --------- | ------- |
-| idVG_unique      | idVG      | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome      | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | -----     | --------- | ------------------- | ------------------------- | ------- |
-| idCliente | ?         | Tabela_j            | idVG                      | Não     |
+| idCliente | ?         | CLIENTE            | idVG                      | Não     |
 
 
 
@@ -372,7 +332,6 @@ Armazena dados relativos aos clientes (visitantes ou padrinhos)
 
 | Nome             | Coluna(s) | Indexar |
 | ---------------- | --------- | ------- |
-| idCliente_unique | idCliente | Sim     |
 | cc_unique        | cc        | Sim     |
 
 
