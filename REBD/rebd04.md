@@ -11,6 +11,7 @@
   - [DESCONTO](#DESCONTO)
   - [VISITASGRUPO](#VISITASGRUPO)
   - [CLIENTE](#CLIENTE)
+  - [APADRINHA](#APADRINHA)
  
 
 ## Relações
@@ -336,13 +337,13 @@ Armazena dados relativos aos clientes (visitantes ou padrinhos)
 
 
 
-### APADRINHAR 
+### APADRINHA 
 
-A tabela APADRINHAR armazena o valor com que o cliente contribui para ajudar o animal escolhido.
+A tabela APADRINHA armazena o valor com que o cliente contribui para ajudar o animal escolhido.
 
 #### COLUNAS 
 
-| APADRINHAR | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| APADRINHA  | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :--------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | valor      | valor a contribuir        | FLOAT       | -           | Não        | Sim  |
 
