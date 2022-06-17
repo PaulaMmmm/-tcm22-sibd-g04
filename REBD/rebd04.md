@@ -2,8 +2,8 @@
 
 - [Relações](#relações)
   - [ANIMAL](#ANIMAL)
-  - [Tabela_b](#tabela_b)
-  - [Tabela_c](#tabela_c)
+  - [SETOR](#SETOR)
+  - [ESPECIE](#ESPECIE)
   - [Tabela_d](#tabela_d)
   - [Tabela_e](#tabela_e)
   - [Tabela_f](#tabela_f)
@@ -55,10 +55,7 @@ Consiste numa tabela que armazena todos os dados basicos de cada animal do Zoo
 
 
 
-
-### Tabela_b
-
-#### SETOR 
+### SETOR 
 
 A tabela SETOR armazena os dados referentes aos habitats. Dentro destes existem áreas onde as especies vivem separadamente.
 
@@ -93,9 +90,7 @@ A tabela SETOR armazena os dados referentes aos habitats. Dentro destes existem 
 
 
 
-### Tabela_c
-
-#### ESPECIE   
+### ESPECIE   
 
 Armazena dados ainda mais pormenorizados acerca dos animais.
 
