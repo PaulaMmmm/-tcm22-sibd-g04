@@ -4,8 +4,8 @@
   - [ANIMAL](#ANIMAL)
   - [SETOR](#SETOR)
   - [ESPECIE](#ESPECIE)
-  - [Tabela_d](#tabela_d)
-  - [Tabela_e](#tabela_e)
+  - [VACINA](#VACINA)
+  - [AREA](#AREA)
   - [Tabela_f](#tabela_f)
   - [Tabela_g](#tabela_g)
   - [Tabela_h](#tabela_h)
@@ -126,9 +126,9 @@ Armazena dados ainda mais pormenorizados acerca dos animais.
 | codAnimal | ?         | Tabela_a            | idEspecie                 | ?       |
 
 
-### Tabela_d
 
-#### VACINA    
+
+### VACINA    
 
 Armazena dados das vacinas administradas aos animais.
 
@@ -161,9 +161,9 @@ Armazena dados das vacinas administradas aos animais.
 
 
 
-### Tabela_e
 
-#### AREA    
+
+### AREA    
 
 Armazena dados relativos à area de habitação de cada espécie.
 
