@@ -117,6 +117,7 @@ Nos exemplos pretendemos inserir dados em todas as colunas e esperávamos que no
 insert into `ANIMAL` values('8012345678', '500', '20', 'crocodylus', '2022-10-21 04:30:01', '2022-05-13 12:23:43');
 SELECT * FROM `ANIMAL`;
 ```
+
 ![An alternative description](tabela_a.png)  
 
 ### SETOR
@@ -124,6 +125,7 @@ SELECT * FROM `ANIMAL`;
 insert into `SETOR`values('s012956412', 'norte', 'artico');
 SELECT * FROM `SETOR`;
 ```
+
 ![An alternative description](tabela_b.png)  
 
 ### ESPECIE
@@ -131,6 +133,7 @@ SELECT * FROM `SETOR`;
 insert into `ESPECIE`values('e012956413', 'crocodilo', '15', 'carnivoro', 'reptil');
 SELECT * FROM `ESPECIE`;
 ```
+
 ![An alternative description](tabela_c.png)  
 
 ### VACINA
@@ -138,6 +141,7 @@ SELECT * FROM `ESPECIE`;
 insert into `VACINA`values('v012956478', 'raiva');
 SELECT * FROM `VACINA`;
 ```
+
 ![An alternative description](tabela_d.png)  
 
 ### AREA
@@ -145,6 +149,7 @@ SELECT * FROM `VACINA`;
 insert into `AREA`values('a012956488', '5');
 SELECT * FROM `AREA`;
 ```
+
 ![An alternative description](tabela_e.png)  
 
 ### FUNCIONARIO
@@ -152,6 +157,7 @@ SELECT * FROM `AREA`;
 insert into `FUNCIONARIO`values('f012956999', 'Duarte Lopes', '456723879ZX9', '937659233', '08:30:00', '18:30:00', '2022-04-21', 'tratador');
 SELECT * FROM `FUNCIONARIO`;
 ```
+
 ![An alternative description](tabela_f.png)  
 
 ### BILHETE
@@ -159,6 +165,7 @@ SELECT * FROM `FUNCIONARIO`;
 insert into `BILHETE`values('b01295786896436', '10', 'Adulto');
 SELECT * FROM `BILHETE`;
 ```
+
 ![An alternative description](tabela_g.png)  
 
 ### DESCONTO
@@ -166,6 +173,7 @@ SELECT * FROM `BILHETE`;
 insert into `DESCONTO`values('Desconto domingo', '10');
 SELECT * FROM `DESCONTO`;
 ```
+
 ![An alternative description](tabela_h.png)  
 
 ### VISITAS GRUPO
@@ -173,6 +181,7 @@ SELECT * FROM `DESCONTO`;
 insert into `VISITASGRUPO`values('v123454876', 'Rapozas', '20', '09:00:00', '11:00:00', '2022-08-24');
 SELECT * FROM `VISITASGRUPO`;
 ```
+
 ![An alternative description](tabela_i.png) 
 
 ### CLIENTE
@@ -180,6 +189,7 @@ SELECT * FROM `VISITASGRUPO`;
 insert into `CLIENTE`values('c987654354', 'Maria Joana', '23', 'mariajoana@gmail.com', '456744879ZX9', '910077889');
 SELECT * FROM `CLIENTE`;
 ```
+
 ![An alternative description](tabela_j.png)  
 
 ---
