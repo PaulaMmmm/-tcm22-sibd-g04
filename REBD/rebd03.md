@@ -25,7 +25,7 @@ Responsável (CLIENTE, VISITASGRUPO)
 
 ## Normalização do Esquema Relacional
 
-ANIMAL (#idCliente  CLIENTE, codAnimal, peso, idade, nomeCientifico, dataObito, dataNasc)
+ANIMAL (#idCliente --> CLIENTE, codAnimal, peso, idade, nomeCientifico, dataObito, dataNasc)
 
 1NF
 
@@ -41,7 +41,7 @@ Já se encontra na 3NF
 
 ---
 
-SETOR (#idArea  AREA, idSetor, local, tema) 
+SETOR (#idArea --> AREA, idSetor, local, tema) 
 
 1NF
 Já se encontra na 1NF
@@ -56,7 +56,7 @@ Já se encontra na 3NF
 
 ---
 
-ESPECIE (#codAnimal  ANIMAL, idEspecie, nomeEspecie, quantidadeComida, dieta, tipo) 
+ESPECIE (#codAnimal --> ANIMAL, idEspecie, nomeEspecie, quantidadeComida, dieta, tipo) 
 
 1NF
 
@@ -72,7 +72,7 @@ Já se encontra na 3NF
 
 ---
 
-VACINA (#codAnimal  ANIMAL, nomeVac, idVac) 
+VACINA (#codAnimal --> ANIMAL, nomeVac, idVac) 
 
 1NF
 
@@ -82,7 +82,7 @@ Já se encontra na 1NF
 
 VACINA (nomeVac, idVac)
 
-VACINAANIMAL (#codAnimal  ANIMAL, # idVac  VACINA)
+VACINAANIMAL (#codAnimal --> ANIMAL, # idVac  VACINA)
 
 3NF
 
@@ -90,7 +90,7 @@ Já se encontra na 3NF
 
 ---
 
-AREA (#idEspecie  ESPECIE, idArea, capacidadeMax) 
+AREA (#idEspecie --> ESPECIE, idArea, capacidadeMax) 
 
 1NF
 
@@ -122,7 +122,7 @@ Já se encontra na 3NF
 
 ---
 
-BILHETE (#idCliente  CLIENTE, codBilhete, preco, faixaEtaria)
+BILHETE (#idCliente --> CLIENTE, codBilhete, preco, faixaEtaria)
 
 1NF
 
@@ -138,7 +138,7 @@ Já se encontra na 3NF
 
 ---
 
-DESCONTO (#codBilhete  BILHETE, nomeDesconto, valor) 
+DESCONTO (#codBilhete --> BILHETE, nomeDesconto, valor) 
 
 1NF
 
@@ -154,7 +154,7 @@ Já se encontra na 3NF
 
 ---
 
-VISITASGRUPO (#idCliente  CLIENTE, idVG, nomeGrupo, numeroParticipantes, data, horaEntrada, horaSaida) 
+VISITASGRUPO (#idCliente --> CLIENTE, idVG, nomeGrupo, numeroParticipantes, data, horaEntrada, horaSaida) 
 
 1NF
 
