@@ -25,6 +25,28 @@ Responsável (CLIENTE, VISITASGRUPO)
 
 ## Normalização do Esquema Relacional
 
+Dependencias Funcionais
+
+IdVac --> nomeVac 
+
+idArea --> capacidadeMax
+
+IdSetor --> local, tema
+
+idEspecie --> dieta, nomeEspecie, quantidadeComida, tipo
+
+codAnimal --> peso, nomeCientifico, dataNasc, dataObito, idade
+
+nomeDesconto --> valor
+
+codBilhete --> preco, faixaEtaria
+
+idCliente --> nomeCliente, idade, email, cc, contacto
+
+IdVG --> horaEntrada, horaSaida, data, nomeGrupo, numeroParticipantes
+
+---
+
 ANIMAL (#idCliente --> CLIENTE, codAnimal, peso, idade, nomeCientifico, dataObito, dataNasc)
 
 1NF
